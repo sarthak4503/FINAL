@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #e45518;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RAILWAY SEAT BOOKING</h1>
+        <form action="/book" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                  <label for="Contact number">Contact Number:</label>
+                  <Input type="contact number" id="contact number name=contact number" required>
+            </div>
+            <div class="form-group">
+                <label for="Address">Address:</label>
+                <input type="Address" id="Address" name="Address" required>
+            </div>
+            <div class="form-group">
+                <label for="Date of Booking">Date of booking:</label>
+                <input type="Date of booking" id="Date of booking" name="Date of booking" required>
+            </div>
+            <div class="form-group">
+                <label for="Date of Departure">Date of Departure:</label>
+                <input type="Date of Departure" id="Date of Deprture" name="Date of Departure" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="service1">Ac coach</option>
+                    <option value="service2">Sleeper coach</option>
+                    <option value="service3">General coach</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
